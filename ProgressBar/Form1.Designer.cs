@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pbStatus = new System.Windows.Forms.ProgressBar();
             this.btnRun = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // pbStatus
@@ -93,8 +95,10 @@
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.pbStatus);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "진행상태";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,6 +111,7 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
