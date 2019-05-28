@@ -28,13 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pbStatus = new System.Windows.Forms.ProgressBar();
+            this.btnRun = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // pbStatus
+            // 
+            this.pbStatus.Location = new System.Drawing.Point(13, 13);
+            this.pbStatus.Name = "pbStatus";
+            this.pbStatus.Size = new System.Drawing.Size(395, 42);
+            this.pbStatus.TabIndex = 0;
+            // 
+            // btnRun
+            // 
+            this.btnRun.BackColor = System.Drawing.Color.Red;
+            this.btnRun.Font = new System.Drawing.Font("궁서", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnRun.ForeColor = System.Drawing.Color.White;
+            this.btnRun.Location = new System.Drawing.Point(13, 62);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(204, 80);
+            this.btnRun.TabIndex = 1;
+            this.btnRun.Text = "실행";
+            this.btnRun.UseVisualStyleBackColor = false;
+            // 
+            // btnStop
+            // 
+            this.btnStop.BackColor = System.Drawing.Color.Yellow;
+            this.btnStop.Location = new System.Drawing.Point(224, 62);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(89, 80);
+            this.btnStop.TabIndex = 2;
+            this.btnStop.Text = "멈춤";
+            this.btnStop.UseVisualStyleBackColor = false;
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Lime;
+            this.btnReset.Location = new System.Drawing.Point(319, 62);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(89, 80);
+            this.btnReset.TabIndex = 3;
+            this.btnReset.Text = "리셋";
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(189, 27);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(41, 12);
+            this.lblStatus.TabIndex = 4;
+            this.lblStatus.Text = "상태 : ";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(420, 151);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.btnRun);
+            this.Controls.Add(this.pbStatus);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ProgressBar pbStatus;
+        private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 
