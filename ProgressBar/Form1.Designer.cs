@@ -55,6 +55,7 @@
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "실행";
             this.btnRun.UseVisualStyleBackColor = false;
+            this.btnRun.Click += new System.EventHandler(this.BtnRun_Click);
             // 
             // btnStop
             // 
@@ -65,6 +66,7 @@
             this.btnStop.TabIndex = 2;
             this.btnStop.Text = "멈춤";
             this.btnStop.UseVisualStyleBackColor = false;
+            this.btnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
             // btnReset
             // 
@@ -75,6 +77,7 @@
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "리셋";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // lblStatus
             // 
@@ -84,6 +87,10 @@
             this.lblStatus.Size = new System.Drawing.Size(41, 12);
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "상태 : ";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Form1
             // 
@@ -99,6 +106,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "진행상태";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
